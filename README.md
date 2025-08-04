@@ -65,7 +65,7 @@ An elegant and responsive weather forecast web app built using **HTML**, **CSS**
 
 ## 🖼️ Preview
 
-![App Preview](![alt text](<Screenshot 2025-08-05 010020.png>))
+![App Preview](weather image.png))
 
 ---
 
