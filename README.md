@@ -74,12 +74,6 @@ An elegant and responsive weather forecast web app built using **HTML**, **CSS**
 [Click to View Live Site](https://ronitbera.github.io/WeatherApp/)
 
 ---
-
-## 📄 License
-
-This project is licensed under the **MIT License**.  
-Feel free to use and modify for personal or educational purposes.
-
 ---
 
 > Made with 💙 by Ronit
