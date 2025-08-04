@@ -65,7 +65,7 @@ An elegant and responsive weather forecast web app built using **HTML**, **CSS**
 
 ## 🖼️ Preview
 
-![App Preview](weather image.png))
+![App Preview](preview.png))
 
 ---
 
