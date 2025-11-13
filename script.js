@@ -1,11 +1,15 @@
-const apiKey = 'cdf10605a4aff13edd9f2afe64c4e512'; // 🔑 Your OpenWeatherMap API key
-
 async function getWeather() {
-  const city = document.getElementById('city').value;
+  const city = document.getElementById('city').value.trim();
   const card = document.getElementById('weather-card');
 
   if (!city) {
     alert("Please enter a city.");
+    return;
+  }
+
+  // 🚫 Prevent numeric or invalid input
+  if (!/^[a-zA-Z\s]+$/.test(city)) {
+    alert("Please enter a valid city name (letters only).");
     return;
   }
 
@@ -71,3 +75,4 @@ function setBackground(temp, iconCode) {
     weatherCard.style.background = '#ffffffcc';
   }
 }
+
