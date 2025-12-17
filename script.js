@@ -1,3 +1,4 @@
+const apikey = "fb7f35f03098e7267b9224f2e5ebc10e";
 async function getWeather() {
   const city = document.getElementById('city').value.trim();
   const card = document.getElementById('weather-card');
@@ -75,4 +76,5 @@ function setBackground(temp, iconCode) {
     weatherCard.style.background = '#ffffffcc';
   }
 }
+
 
