@@ -1,3 +1,4 @@
+const apiKey = "fb7f35f03098e7267b9224f2e5ebc10e";
 async function getWeather() {
   const city = document.getElementById('city').value.trim();
   const card = document.getElementById('weather-card');
@@ -13,9 +14,7 @@ async function getWeather() {
     return;
   }
 
- const apiKey = "fb7f35f03098e7267b9224f2e5ebc10e";
-
-const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+ const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   try {
     const res = await fetch(url);
@@ -77,6 +76,7 @@ function setBackground(temp, iconCode) {
     weatherCard.style.background = '#ffffffcc';
   }
 }
+
 
 
 
