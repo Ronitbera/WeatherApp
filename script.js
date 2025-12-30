@@ -8,7 +8,7 @@ async function getWeather() {
     return;
   }
 
-  // 🚫 Prevent numeric or invalid input
+  
   if (!/^[a-zA-Z\s]+$/.test(city)) {
     alert("Please enter a valid city name (letters only).");
     return;
@@ -25,10 +25,10 @@ async function getWeather() {
       return;
     }
 
-    // ✅ Set background and font color based on weather
+    
     setBackground(data.main.temp, data.weather[0].icon);
 
-    // ✅ Display weather data
+    
     card.innerHTML = `
       <h2>${data.name}, ${data.sys.country}</h2>
       <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Weather Icon" />
@@ -41,7 +41,7 @@ async function getWeather() {
   }
 }
 
-// ✅ Move setBackground outside getWeather
+
 function setBackground(temp, iconCode) {
   const isNight = iconCode.includes('n');
   const body = document.body;
@@ -76,6 +76,7 @@ function setBackground(temp, iconCode) {
     weatherCard.style.background = '#ffffffcc';
   }
 }
+
 
 
 
